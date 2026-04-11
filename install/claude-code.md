@@ -3,18 +3,15 @@
 ## Quick install
 
 ```bash
-# 1. Copy cognitive protocol to Claude's config
-cp cognitive-protocol.md ~/.claude/non-attachment.md
-
-# 2. Add reference in CLAUDE.md
-echo '@~/.claude/non-attachment.md' >> ~/.claude/CLAUDE.md
+# 1. Inject core rules into CLAUDE.md (direct content injection — works on all versions)
+cat cognitive-protocol.md >> ~/.claude/CLAUDE.md
 ```
 
 ## What gets loaded where
 
 | File | Destination | Purpose |
 |---|---|---|
-| `cognitive-protocol.md` | `~/.claude/non-attachment.md` | Always-on core rules (~30 lines) |
+| `cognitive-protocol.md` | `~/.claude/CLAUDE.md` (appended) | Always-on core rules (~30 lines) |
 | `SKILL.md` | `~/.claude/skills/non-attachment/SKILL.md` | Full reference (loaded on demand) |
 | `anti-patterns.md` | `~/.claude/skills/non-attachment/anti-patterns.md` | Detailed anti-pattern guide |
 | `examples.md` | `~/.claude/skills/non-attachment/examples.md` | Before/after reference |
@@ -22,8 +19,8 @@ echo '@~/.claude/non-attachment.md' >> ~/.claude/CLAUDE.md
 ## Full install (with skill files)
 
 ```bash
-# 1. Core rules
-cp cognitive-protocol.md ~/.claude/non-attachment.md
+# 1. Core rules (inject directly into CLAUDE.md)
+cat cognitive-protocol.md >> ~/.claude/CLAUDE.md
 
 # 2. Skill files
 mkdir -p ~/.claude/skills/non-attachment
@@ -31,8 +28,7 @@ cp SKILL.md ~/.claude/skills/non-attachment/
 cp anti-patterns.md ~/.claude/skills/non-attachment/
 cp examples.md ~/.claude/skills/non-attachment/
 
-# 3. Register in CLAUDE.md
-echo '@~/.claude/non-attachment.md' >> ~/.claude/CLAUDE.md
+# 3. (Core rules already injected in step 1)
 ```
 
 ## Verify
@@ -48,7 +44,6 @@ If First Principles, Tacit Knowledge, or other cognitive bases are already in CL
 ## Uninstall
 
 ```bash
-rm ~/.claude/non-attachment.md
+# Remove the Non-Attachment section from ~/.claude/CLAUDE.md (search for "# Non-Attachment — Cognitive Protocol" header)
 rm -rf ~/.claude/skills/non-attachment
-# Remove the @~/.claude/non-attachment.md line from ~/.claude/CLAUDE.md
 ```
