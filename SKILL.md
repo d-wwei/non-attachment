@@ -1,3 +1,8 @@
+---
+name: 认知自由
+description: "认知自由——不与任何框架合一，所有认知底座的元保险。"
+---
+
 # Non-Attachment (Cognitive Freedom)
 
 A cognitive base that prevents fusion with any analytical framework — including itself. The meta-insurance for all other cognitive bases. Synthesized from Daoist, Chan/Zen, and Diamond Sutra wisdom into executable cognitive operations.
