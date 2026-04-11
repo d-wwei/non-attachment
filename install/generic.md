@@ -1,5 +1,8 @@
 # Install — Generic (Any Agent/Framework)
 
+> **Recommended**: Run `./install.sh` from the repo root for automated installation. Supports Claude Code, Gemini CLI, Codex CLI, Cursor, OpenCode, and OpenClaw.
+> The manual steps below are for reference or troubleshooting.
+
 ## Universal principle
 
 Non-Attachment is a meta-cognitive base — it prevents fusion with any analytical framework, including itself. Installation means injecting `cognitive-protocol.md` into the agent's always-on instructions (system prompt, rules file, or configuration).
