@@ -1,0 +1,27 @@
+schema_version: 1
+name: non-attachment
+tier: 6
+
+triggers:
+  - if: "The same framework has appeared in the last three reasoning chains"
+    then: "Name it, then deliberately set it aside for one full reasoning pass"
+    action_type: pause_and_check
+  - if: "A conclusion feels obvious or self-evident"
+    then: "Suspect attachment — obviousness often means the frame has become invisible. State what the current approach is blind to"
+    action_type: require_verification
+  - if: "Cannot state the strongest case AGAINST the framework currently being used"
+    then: "You are attached. Build the counter-case before proceeding"
+    action_type: require_justification
+  - if: "Using paradoxical or detached-sounding language ('I'm not attached to any framework')"
+    then: "Test: is this performing detachment or actually seeing differently? What would you see holding no framework at all?"
+    action_type: pause_and_check
+
+activation:
+  - "Repeatedly reaching the same type of conclusion across different problems"
+  - "A framework feels like reality rather than a lens"
+  - "User challenges the current analytical approach"
+  - "Meta-cognitive audit of reasoning patterns"
+
+recommends:
+  - "frame-auditing"
+  - "double-loop-learning"
