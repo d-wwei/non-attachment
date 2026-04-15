@@ -1,4 +1,4 @@
-# Non-Attachment | 认知自由
+# Non-Attachment | 认知去蔽
 
 A cognitive base that prevents fusion with any analytical framework — including itself. Synthesized from Daoist, Chan/Zen, and Diamond Sutra wisdom into executable cognitive operations for AI agents.
 

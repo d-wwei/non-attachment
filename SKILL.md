@@ -1,6 +1,6 @@
 ---
-name: 认知自由
-description: "认知自由——不与任何框架合一，所有认知底座的元保险。"
+name: 认知去蔽
+description: "认知去蔽——不与任何框架合一，所有认知底座的元保险。"
 ---
 
 # Non-Attachment (Cognitive Freedom)
